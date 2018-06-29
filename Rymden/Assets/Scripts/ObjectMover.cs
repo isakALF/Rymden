@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ObjectMover : MonoBehaviour {
 	public float speed;
-	Vector3 startPos;
+	Vector3 startPOS;
 
 	// Use this for initialization
 	void Start () {
-		startPos = transform.position;
+		startPOS = transform.position;
 	}
 	
 	// Update is called once per frame

@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Health : MonoBehaviour
-{
-    public int health = 1;
-    void OnTriggerEnter2D()
-    {
-	    health--;
-    }
+	{
+		public int Hp = 1;
 
-    void Update() { 
-		if (health <= 0) {
-		    Die ();
-	    }
-    }
+		void OnTriggerEnter2D()
+		{
+			Debug.Log("Trigger!");
 
-    void Die()
-    {
-	    Destroy(gameObject);
-    }
+			Hp--;
+		}
+			void Update() { 
+				if (Hp <= 0) {
+			Die ();
+			}
+		}
+		void Die() {
+			Destroy(gameObject);
+		}
 
-}
+	}
