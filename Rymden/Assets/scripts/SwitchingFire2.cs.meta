@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: c3e5dff38a020f743a9f618c41ec4193
+timeCreated: 1527771899
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - fireprefab: {fileID: 1784762661922508, guid: c1e1f592911b7724c869611b35c67daa,
+      type: 2}
+  - fireprefab1: {fileID: 1745834004728950, guid: 4f1b99be4a57a614a99973f452e59102,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
