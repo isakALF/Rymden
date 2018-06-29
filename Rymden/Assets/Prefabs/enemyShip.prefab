@@ -20,10 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4164645627715898}
   - component: {fileID: 212118093081871920}
-  - component: {fileID: 114451807172281418}
   - component: {fileID: 61202825395291752}
   - component: {fileID: 50887262865184020}
   - component: {fileID: 114203943682549484}
+  - component: {fileID: 114265857003905820}
   m_Layer: 8
   m_Name: enemyShip
   m_TagString: Untagged
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
---- !u!114 &114451807172281418
+--- !u!114 &114265857003905820
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf81959977cc457469502c359c20a9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hp: 1
+  health: 1
 --- !u!212 &212118093081871920
 SpriteRenderer:
   m_ObjectHideFlags: 1
