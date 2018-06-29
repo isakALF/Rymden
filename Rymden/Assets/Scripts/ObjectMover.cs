@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class backgroundMover : MonoBehaviour {
+public class ObjectMover : MonoBehaviour {
 	public float speed;
 	Vector3 startPOS;
 

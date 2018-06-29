@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bacground : MonoBehaviour {
+public class Background : MonoBehaviour {
 
 	public GameObject line;
 	public Vector3 spawnValues;
