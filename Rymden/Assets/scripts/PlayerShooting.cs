@@ -18,12 +18,9 @@ public class PlayerShooting : MonoBehaviour
         cooldownTimer -= Time.deltaTime;
 
         // GunSpotR = PlayerShip.transform.Find("GunSpotR").gameObject;
-
         if (Input.GetButton("Fire1") && cooldownTimer <= 0)
         {
-            Debug.Log("Pew!");
             cooldownTimer = fireDelay;
-
             Instantiate(bulletprefab, transform.position, transform.rotation);
         }
     }
