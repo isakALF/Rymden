@@ -51,19 +51,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Follow.cs" />
-     <Compile Include="Assets\scripts\Bacground.cs" />
-     <Compile Include="Assets\scripts\backgroundMover.cs" />
-     <Compile Include="Assets\scripts\DamageByDamage.cs" />
-     <Compile Include="Assets\scripts\enemyshooting.cs" />
-     <Compile Include="Assets\scripts\health.cs" />
+     <Compile Include="Assets\scripts\Background.cs" />
+     <Compile Include="Assets\scripts\EnemyShooting.cs" />
+     <Compile Include="Assets\scripts\Health.cs" />
      <Compile Include="Assets\scripts\MoveForward.cs" />
+     <Compile Include="Assets\scripts\ObjectMover.cs" />
+     <Compile Include="Assets\scripts\PlayerHealthHandler.cs" />
      <Compile Include="Assets\scripts\PlayerMovement.cs" />
      <Compile Include="Assets\scripts\PlayerShooting.cs" />
      <Compile Include="Assets\scripts\SelfDestruct.cs" />
+     <Compile Include="Assets\scripts\Shot.cs" />
      <Compile Include="Assets\scripts\SwitchingEngineFire.cs" />
-     <Compile Include="Assets\scripts\SwitchingFire2.cs" />
-     <Compile Include="Assets\SetParent.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -8,10 +8,7 @@ public class SwitchingEngineFire : MonoBehaviour {
     public Sprite normalFire;
   	public Sprite bigFire;
 	public Sprite smallFire;
-	private bool bigFireActive = false;
-	private bool smallFireActive = false;
-	private bool normalFireActive = false;
-    private SpriteRenderer spriteRenderer;
+	private SpriteRenderer spriteRenderer;
 	// Update is called once per frame
 
     void Start()

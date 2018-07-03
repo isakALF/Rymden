@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class EnemyShooting : MonoBehaviour {
 
-	public GameObject shotPrefab;
-	public float shootingRate;
-	public float shootColdown;
+	public GameObject bullet;
 
-	void Start() {
-		shootColdown = 0f;
+	float fireRate;
+	float nextFire;
+
+	void Start () {
+		fireRate = 1f;
+		nextFire = Time.time;
+	}
+	void Update () {
+		CheckIfTimeToFire ();
 	}
 
-	void Update () {
-		
+	void CheckIfTimeToFire()
+	{
+		if (Time.time > nextFire)
+			Instantiate (bullet, transform.position, Quaternion.identity);
+			nextFire = Time.time + fireRate;
 	}
 }

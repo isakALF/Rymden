@@ -65,8 +65,6 @@
 -r:C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll
 -r:C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll
 -r:C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll
--r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll"
--r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll"
 -define:UNITY_5_3_OR_NEWER
 -define:UNITY_5_4_OR_NEWER
 -define:UNITY_5_5_OR_NEWER
@@ -163,18 +161,16 @@
 -define:UNITY_EDITOR_WIN
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
--define:ENABLE_VSTU
-Assets/Scripts/Background.cs
-Assets/Scripts/EnemyShooting.cs
-Assets/Scripts/health.cs
-Assets/Scripts/Health.cs
-Assets/Scripts/MoveForward.cs
-Assets/Scripts/ObjectMover.cs
-Assets/Scripts/PlayerHealthHandler.cs
-Assets/Scripts/PlayerMovement.cs
-Assets/Scripts/PlayerShooting.cs
-Assets/Scripts/SelfDestruct.cs
-Assets/Scripts/SwitchingEngineFire.cs
+Assets/scripts/Background.cs
+Assets/scripts/enemyshooting.cs
+Assets/scripts/Health.cs
+Assets/scripts/MoveForward.cs
+Assets/scripts/ObjectMover.cs
+Assets/scripts/PlayerHealthHandler.cs
+Assets/scripts/PlayerMovement.cs
+Assets/scripts/PlayerShooting.cs
+Assets/scripts/SelfDestruct.cs
+Assets/scripts/SwitchingEngineFire.cs
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\UnityScript.dll"
