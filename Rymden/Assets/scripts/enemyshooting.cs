@@ -4,23 +4,27 @@ using UnityEngine;
 
 public class EnemyShooting : MonoBehaviour {
 
-	public GameObject bullet;
+	public Vector3 bulletOffset = new Vector3(0, 0.5f, 0);
 
-	float fireRate;
-	float nextFire;
+	public GameObject bullet;
+	int bulletLayer;
+
+	public float fireDelay = 0.50f;
+	float cooldownTimer = 0;
 
 	void Start () {
-		fireRate = 1f;
-		nextFire = Time.time;
+		bulletLayer = gameObject.layer;
 	}
 	void Update () {
-		CheckIfTimeToFire ();
-	}
+		cooldownTimer -= Time.deltaTime;
+	
+		if (cooldownTimer <= 0) {
+			cooldownTimer = fireDelay;
 
-	void CheckIfTimeToFire()
-	{
-		if (Time.time > nextFire)
-			Instantiate (bullet, transform.position, Quaternion.identity);
-			nextFire = Time.time + fireRate;
+			Vector3 offset = transform.rotation * bulletOffset;
+
+			GameObject bulletGO = (GameObject)Instantiate (bullet, transform.position + offset, transform.rotation);
+			bulletGO.layer = bulletLayer;	
+		}
 	}
 }
