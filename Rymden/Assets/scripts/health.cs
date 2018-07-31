@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    public GameObject deathAnimation;
     public int health = 1;
     void OnTriggerEnter2D()
     {
@@ -13,12 +14,13 @@ public class Health : MonoBehaviour
     void Update() { 
 		if (health <= 0) {
 		    Die ();
-	    }
+        }
     }
 
     void Die()
     {
-	    Destroy(gameObject);
+        deathAnimation = (GameObject)Instantiate(deathAnimation, transform.position, transform.rotation);
+        Destroy(gameObject);
     }
 
 }

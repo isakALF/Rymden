@@ -6,17 +6,39 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5c55ce8a86294794b881352acf13b15c,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: timer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deathAnimation
+      value: 
+      objectReference: {fileID: 1801334276019182, guid: ede73363cf4c29b408f2cc2e10f2b4a0,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 0}
+  m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1305923840995566}
-  m_IsPrefabAsset: 1
+  m_IsPrefabParent: 0
 --- !u!1 &1305923840995566
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
+  serializedVersion: 5
   m_Component:
   - component: {fileID: 4772313861649742}
   - component: {fileID: 212014152124453534}
@@ -35,7 +57,7 @@ GameObject:
 --- !u!4 &4772313861649742
 Transform:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1305923840995566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -49,7 +71,7 @@ Transform:
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1305923840995566}
   m_BodyType: 1
@@ -68,7 +90,7 @@ Rigidbody2D:
 --- !u!61 &61914622546011988
 BoxCollider2D:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1305923840995566}
   m_Enabled: 1
@@ -79,9 +101,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 1.25, y: 1.0799999, z: 1.88, w: 0.55}
-    pivot: {x: 0.420222, y: 0.5578101}
-    oldSize: {x: 4, y: 4}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.12, y: 5.12}
     newSize: {x: 5, y: 5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -93,7 +115,7 @@ BoxCollider2D:
 --- !u!114 &114145626907924982
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1305923840995566}
   m_Enabled: 1
@@ -105,7 +127,7 @@ MonoBehaviour:
 --- !u!114 &114214965169426576
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1305923840995566}
   m_Enabled: 1
@@ -117,7 +139,7 @@ MonoBehaviour:
 --- !u!114 &114548784561737998
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1305923840995566}
   m_Enabled: 1
@@ -125,11 +147,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf81959977cc457469502c359c20a9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimation: {fileID: 1801334276019182, guid: ede73363cf4c29b408f2cc2e10f2b4a0,
+    type: 2}
   health: 1
 --- !u!212 &212014152124453534
 SpriteRenderer:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1305923840995566}
   m_Enabled: 1
@@ -161,7 +185,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ab895dee1504d204e92edad41090876b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5c55ce8a86294794b881352acf13b15c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -171,4 +195,3 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0

@@ -113,6 +113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf81959977cc457469502c359c20a9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimation: {fileID: 1485157575952932, guid: ae4add610a79d3f4898ab51bff4d385e,
+    type: 2}
   health: 1
 --- !u!114 &114825956626029710
 MonoBehaviour:
@@ -139,6 +141,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
