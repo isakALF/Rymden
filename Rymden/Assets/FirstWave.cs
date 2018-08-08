@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class FirstWave : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	public GameObject wave;
+
+	void OnTriggerEnter2D(){
+		Instantiate (wave);
 	}
 }

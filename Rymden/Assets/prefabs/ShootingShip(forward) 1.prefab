@@ -134,8 +134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletOffset: {x: 0, y: 0.5, z: 0}
-  bullet: {fileID: 1485157575952932, guid: ae4add610a79d3f4898ab51bff4d385e, type: 2}
-  fireDelay: 0.5
+  bullet: {fileID: 1651132152679648, guid: e071e998fcf795b4eabc13ede74b8669, type: 2}
+  fireDelay: 1
 --- !u!212 &212880909635759388
 SpriteRenderer:
   m_ObjectHideFlags: 1
