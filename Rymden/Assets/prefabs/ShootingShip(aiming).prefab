@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1862372318584910}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.42, y: 7.41, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4786092458798012}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf81959977cc457469502c359c20a9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathAnimation: {fileID: 1485157575952932, guid: ae4add610a79d3f4898ab51bff4d385e,
+  deathAnimation: {fileID: 1551316153612924, guid: b4338da1d68c5b54d860c2740afbc284,
     type: 2}
   health: 1
 --- !u!114 &114646637892121996
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletOffset: {x: 0, y: 0, z: -0.1}
   bullet: {fileID: 1651132152679648, guid: e071e998fcf795b4eabc13ede74b8669, type: 2}
-  fireDelay: 1
+  fireDelay: 1.5
 --- !u!212 &212616442222936210
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf81959977cc457469502c359c20a9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathAnimation: {fileID: 1801334276019182, guid: ede73363cf4c29b408f2cc2e10f2b4a0,
+  deathAnimation: {fileID: 1551316153612924, guid: b4338da1d68c5b54d860c2740afbc284,
     type: 2}
   health: 1
 --- !u!114 &114296136742905388
